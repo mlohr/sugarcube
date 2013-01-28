@@ -605,6 +605,9 @@ view.fade_out(0.5, delay: 0,
 view.move_to([0, 100])  # move to position 0, 100
 view.delta_to([0, 100])  # move over 0, down 100, from current position
 
+view.rotate_to Math::PI # rotate to angle in Radians
+view.rotate_to(duration=>0.5, angle=>0.78)
+
 view.slide :left   # slides the entire view one "page" to the left, right, up, or down
 
 view.shake  # shakes the view.
